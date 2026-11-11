@@ -1,0 +1,11 @@
+node_modules/
+_site/
+
+# Original full-size photos (~13 MB). The site uses the optimised copies in assets/images/
+/images/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/

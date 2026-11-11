@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Nishan &amp; Anjalika · Wedding Invitation</title>
+  <meta name="description" content="You are invited to the wedding of Nishan &amp; Anjalika." />
+  <meta property="og:title" content="Nishan &amp; Anjalika · Wedding Invitation" />
+  <meta property="og:description" content="You are invited to celebrate our wedding day." />
+  <meta property="og:image" content="assets/images/couple-kiss.jpg" />
+  <meta name="theme-color" content="#E6F0FA" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&family=Mea+Culpa&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="locked">
+
+  <!-- ═════════ ENVELOPE INTRO ═════════ -->
+  <div id="intro" class="intro" role="dialog" aria-label="Tap to open the invitation">
+    <div class="intro-backdrop" aria-hidden="true"></div>
+
+    <div class="cel-card" aria-hidden="true">
+      <div class="env">
+        <div class="env-inner"></div>
+        <div class="env-letter">
+          <img data-img="hero" alt="" />
+        </div>
+        <div class="env-pocket"></div>
+        <div class="env-flap"><div class="env-flap-face"></div></div>
+        <div class="env-border"></div>
+        <img class="env-floral env-floral--top" src="assets/images/floral.svg" alt="" draggable="false" />
+        <img class="env-floral env-floral--bottom" src="assets/images/floral.svg" alt="" draggable="false" />
+        <div class="seal">
+          <div class="seal-wax">
+            <span class="seal-mono"><span data-mono="1"></span><i>&amp;</i><span data-mono="2"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="cel-copy" id="openBtn" aria-label="Open the invitation">
+      <span class="cel-veil cel-veil--top" aria-hidden="true"></span>
+      <span class="cel-veil cel-veil--bottom" aria-hidden="true"></span>
+      <span class="cel-group">
+        <span class="t-caps cel-eyebrow">You are invited to the wedding of</span>
+        <span class="cel-names">
+          <span data-name="1"></span>
+          <span class="cel-amp">&amp;</span>
+          <span data-name="2"></span>
+        </span>
+        <span class="t-caps cel-date" data-date="dots"></span>
+      </span>
+      <span class="cel-group">
+        <span class="cel-dear" data-guest></span>
+        <span class="t-caps cel-hint">Tap to Open</span>
+      </span>
+    </button>
+  </div>
+
+  <!-- ═════════ PAGE ═════════ -->
+  <div class="page">
+    <div class="page-backdrop" aria-hidden="true">
+      <img class="corner corner--tl" src="assets/images/floral.svg" alt="" />
+      <img class="corner corner--br" src="assets/images/floral.svg" alt="" />
+    </div>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a href="#hero" class="mono-link monogram" aria-label="Home"><span data-mono="1"></span><i>&amp;</i><span data-mono="2"></span></a>
+      <nav class="topnav" aria-label="Sections">
+        <a href="#hero" class="active">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#events">Details</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#venue">Location</a>
+      </nav>
+      <button type="button" class="music-btn" id="musicBtn" aria-label="Toggle music" hidden>
+        <svg class="ic-on" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></svg>
+        <svg class="ic-off" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="m22 9-6 6"/><path d="m16 9 6 6"/></svg>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero wrap">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="script hero-dear" data-guest></p>
+            <span class="t-caps eyebrow" data-text="intro"></span>
+            <h1 class="hero-names">
+              <span class="name" data-name="1"></span>
+              <span class="script hero-and">and</span>
+              <span class="name" data-name="2"></span>
+            </h1>
+            <p class="hero-line" data-text="invitationLine"></p>
+            <div class="divider divider--diamond" aria-hidden="true"><span></span><b></b><span></span></div>
+            <div class="hero-when">
+              <p class="t-caps hero-date" data-date="long"></p>
+              <p class="t-caps hero-place"><span data-date="time"></span>&nbsp; · &nbsp;<span data-venue="name"></span></p>
+            </div>
+          </div>
+          <div class="hero-photo-wrap">
+            <div class="arch-photo reveal reveal--zoom">
+              <img data-img="hero" alt="Nishan and Anjalika" />
+              <div class="arch-inner" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COUNTDOWN -->
+      <section id="countdown" class="countdown">
+        <div class="countdown-panel">
+          <div class="frame-line" aria-hidden="true"></div>
+          <img class="floral-bg" src="assets/images/floral.svg" alt="" aria-hidden="true" draggable="false" />
+          <div class="countdown-inner reveal">
+            <div class="script countdown-kicker">We are getting</div>
+            <h2 class="countdown-title">Married</h2>
+            <div class="divider divider--star" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+            <div class="count-grid">
+              <div class="count-box"><span class="num" id="cdDays">00</span><span class="bar"></span><span class="t-caps lbl">Days</span></div>
+              <div class="count-box"><span class="num" id="cdHours">00</span><span class="bar"></span><span class="t-caps lbl">Hours</span></div>
+              <div class="count-box"><span class="num" id="cdMins">00</span><span class="bar"></span><span class="t-caps lbl">Minutes</span></div>
+              <div class="count-box"><span class="num" id="cdSecs">00</span><span class="bar"></span><span class="t-caps lbl">Seconds</span></div>
+            </div>
+            <p class="t-caps count-until">Until <span data-date="long"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORY -->
+      <section id="story" class="wrap section">
+        <div class="sec-head reveal">
+          <h2 class="sec-title">Our <span>Story</span></h2>
+          <div class="divider divider--star grow" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+        </div>
+        <p class="story-text reveal" data-text="story"></p>
+        <div class="story-grid">
+          <div class="arch-photo arch-photo--story reveal">
+            <img data-img="story" alt="Nishan and Anjalika" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section id="events" class="wrap section">
+        <div class="sec-head reveal">
+          <span class="t-caps eyebrow" data-date="long"></span>
+          <h2 class="sec-title">The <span>Celebration</span></h2>
+          <div class="divider divider--star grow" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+        </div>
+        <div class="events" id="eventList"></div>
+
+        <div class="cal">
+          <div class="cal-card">
+            <button type="button" class="cal-btn" id="calBtn" aria-haspopup="menu" aria-expanded="false" aria-controls="calMenu">
+              <span class="cal-ic">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+              </span>
+              <span class="cal-txt">
+                <span class="cal-title">Save Our Date</span>
+                <span class="cal-sub">Add the wedding to your calendar</span>
+              </span>
+              <span class="cal-chev"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+            </button>
+            <div class="cal-menu" id="calMenu" role="menu" hidden>
+              <a role="menuitem" id="calGoogle" target="_blank" rel="noopener">Google Calendar</a>
+              <a role="menuitem" id="calIcs" href="#">Apple / Outlook (.ics)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="wrap section">
+        <div class="sec-head reveal">
+          <span class="t-caps eyebrow">Moments we treasure</span>
+          <h2 class="sec-title">Photo <span>Gallery</span></h2>
+          <div class="divider divider--star grow" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+        </div>
+        <div class="gallery" id="galleryGrid"></div>
+      </section>
+
+      <!-- VENUE -->
+      <section id="venue" class="wrap section">
+        <div class="sec-head reveal">
+          <h2 class="sec-title">The <span>Venue</span></h2>
+          <div class="divider divider--star grow" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+        </div>
+        <div class="venue-grid reveal">
+          <div class="venue-card-wrap">
+            <div class="venue-card">
+              <span class="ring-ic">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div class="venue-txt">
+                <span class="script venue-hall" data-venue="hall"></span>
+                <h3 class="venue-name" data-venue="name"></h3>
+                <p class="venue-addr" data-venue="address"></p>
+              </div>
+            </div>
+          </div>
+          <div class="venue-map-col">
+            <div class="venue-map"><iframe id="mapFrame" title="Map of the venue" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <a class="btn-dark" id="mapsLink" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open in Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section id="rsvp" class="rsvp">
+        <div class="rsvp-inner reveal">
+          <span class="t-caps eyebrow">RSVP</span>
+          <h2 class="sec-title">Will you <span>join us</span></h2>
+          <p class="rsvp-lead">It would mean so much to have you with us. Please let us know if you can join the celebration.</p>
+          <p class="t-caps rsvp-by">Kindly respond by <span data-text="rsvp.deadline"></span></p>
+
+          <div class="rsvp-card">
+            <form id="rsvpForm" class="rsvp-form" novalidate>
+              <label class="field">
+                <span class="t-caps">Your name</span>
+                <input type="text" name="name" id="rsvpName" required autocomplete="name" placeholder="Full name" />
+              </label>
+              <fieldset class="choice">
+                <legend class="t-caps">Will you attend?</legend>
+                <div class="choice-row">
+                  <label><input type="radio" name="attend" value="yes" checked /><span>Joyfully accept</span></label>
+                  <label><input type="radio" name="attend" value="no" /><span>Regretfully decline</span></label>
+                </div>
+              </fieldset>
+              <label class="field" id="guestField">
+                <span class="t-caps">Number of guests</span>
+                <select name="guests">
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                </select>
+              </label>
+              <label class="field">
+                <span class="t-caps">A note for the couple <em>(optional)</em></span>
+                <textarea name="note" rows="3" placeholder="Your wishes…"></textarea>
+              </label>
+              <p class="form-err" id="rsvpErr" hidden>Please enter your name.</p>
+              <button type="submit" class="btn-dark btn-wide">
+                <svg viewBox="0 0 24 24"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/></svg>
+                Send RSVP
+              </button>
+            </form>
+
+            <div class="rsvp-thanks" id="rsvpThanks" hidden>
+              <svg class="heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <h3>Thank you</h3>
+              <p class="script">we cannot wait to celebrate with you</p>
+              <p class="small">See you on the big day.</p>
+              <button type="button" class="link-btn" id="rsvpAgain">Change my response</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER CARD -->
+      <section id="footer" class="wrap footer-sec">
+        <div class="footer-card reveal">
+          <div class="footer-line" aria-hidden="true"></div>
+          <img class="floral-bg floral-bg--footer" src="assets/images/floral.svg" alt="" aria-hidden="true" draggable="false" />
+          <div class="footer-content">
+            <div class="t-caps footer-save">Save the date</div>
+            <div class="footer-date" data-date="dots"></div>
+            <div class="script footer-sealed">Sealed with love.</div>
+            <div class="monogram footer-mono"><span data-mono="1"></span><i>&amp;</i><span data-mono="2"></span></div>
+            <div class="footer-names"><span data-name="1"></span> &amp; <span data-name="2"></span></div>
+            <div class="call-row" id="callRow"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="credit">
+      <p>Made with <svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> for <span data-name="1"></span> &amp; <span data-name="2"></span></p>
+    </footer>
+
+    <!-- Mobile bottom navigation -->
+    <nav class="bottomnav" aria-label="Section navigation">
+      <a href="#hero" class="active"><svg viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Home</span></a>
+      <a href="#events"><svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg><span>Details</span></a>
+      <a href="#rsvp" class="bn-rsvp"><span class="bn-fab"><svg viewBox="0 0 24 24"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/></svg></span><span>RSVP</span></a>
+      <a href="#gallery"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg><span>Gallery</span></a>
+      <a href="#venue"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Location</span></a>
+    </nav>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lb-close" aria-label="Close">×</button>
+      <button type="button" class="lb-nav lb-prev" aria-label="Previous">‹</button>
+      <img alt="" />
+      <button type="button" class="lb-nav lb-next" aria-label="Next">›</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto"></audio>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

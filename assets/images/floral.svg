@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 220">
+  <defs>
+    <path id="leaf" d="M0 0C7-9 22-10 32 0C22 10 7 9 0 0Z"/>
+    <g id="bloom">
+      <g fill="#E8EFF6" stroke="#8C6D1F" stroke-width="1.1">
+        <ellipse cx="0" cy="-11" rx="7" ry="11"/>
+        <ellipse cx="0" cy="-11" rx="7" ry="11" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-11" rx="7" ry="11" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-11" rx="7" ry="11" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-11" rx="7" ry="11" transform="rotate(288)"/>
+      </g>
+      <circle r="4.5" fill="#D4AF37" stroke="#8C6D1F" stroke-width="1"/>
+    </g>
+    <g id="bud">
+      <ellipse cx="0" cy="-6" rx="4" ry="7" fill="#E8EFF6" stroke="#8C6D1F" stroke-width="1"/>
+      <path d="M-4-2C-2 2 2 2 4-2" fill="none" stroke="#8C6D1F" stroke-width="1"/>
+    </g>
+    <g id="side">
+      <g fill="none" stroke="#8C6D1F" stroke-width="1.5" stroke-linecap="round">
+        <path d="M300 208C235 204 160 186 40 118"/>
+        <path d="M205 196C190 170 170 150 140 136"/>
+        <path d="M120 162C104 140 92 120 88 94"/>
+        <path d="M296 204C286 160 268 120 238 78"/>
+      </g>
+      <g fill="#A8BCCF" stroke="#7F8EA0" stroke-width=".8">
+        <use xlink:href="#leaf" transform="translate(262 204) rotate(200) scale(.9)"/>
+        <use xlink:href="#leaf" transform="translate(240 200) rotate(150) scale(.85)"/>
+        <use xlink:href="#leaf" transform="translate(190 191) rotate(195) scale(.95)"/>
+        <use xlink:href="#leaf" transform="translate(170 184) rotate(140)"/>
+        <use xlink:href="#leaf" transform="translate(110 156) rotate(185) scale(.9)"/>
+        <use xlink:href="#leaf" transform="translate(90 144) rotate(135) scale(.8)"/>
+        <use xlink:href="#leaf" transform="translate(60 128) rotate(170) scale(.75)"/>
+        <use xlink:href="#leaf" transform="translate(178 160) rotate(230) scale(.75)"/>
+        <use xlink:href="#leaf" transform="translate(160 146) rotate(170) scale(.7)"/>
+        <use xlink:href="#leaf" transform="translate(98 122) rotate(250) scale(.7)"/>
+        <use xlink:href="#leaf" transform="translate(286 160) rotate(250) scale(.8)"/>
+        <use xlink:href="#leaf" transform="translate(278 140) rotate(190) scale(.75)"/>
+        <use xlink:href="#leaf" transform="translate(262 110) rotate(235) scale(.7)"/>
+      </g>
+      <use xlink:href="#bloom" transform="translate(140 136) scale(.9)"/>
+      <use xlink:href="#bloom" transform="translate(40 118) scale(.7)"/>
+      <use xlink:href="#bud" transform="translate(88 94) rotate(-15)"/>
+      <use xlink:href="#bud" transform="translate(238 78) rotate(-30)"/>
+      <circle cx="215" cy="178" r="2.4" fill="#D4AF37"/>
+      <circle cx="74" cy="110" r="2" fill="#D4AF37"/>
+      <circle cx="258" cy="96" r="2" fill="#D4AF37"/>
+    </g>
+  </defs>
+  <use xlink:href="#side"/>
+  <use xlink:href="#side" transform="translate(600 0) scale(-1 1)"/>
+  <use xlink:href="#bloom" transform="translate(300 196) scale(1.35)"/>
+</svg>

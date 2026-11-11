@@ -1,0 +1,9 @@
+{
+  "name": "nishan-anjalika-wedding",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wedding invitation website for Nishan & Anjalika",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
