@@ -67,5 +67,5 @@ window.WEDDING = {
   ],
 
   // Background music (optional). Put an mp3 in assets/music/ and set e.g. "assets/music/song.mp3"
-  music: "",
+  music: "assets/music/Lovely.mp3",
 };
